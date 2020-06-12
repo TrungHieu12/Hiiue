@@ -1,0 +1,31 @@
+var http = require('http');
+var port = process.erv.PORT || 3000;
+
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello World!');
+}).listen(port);
+{
+  "name": "heroku",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrungHieu12/heroku.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TrungHieu12/heroku/issues"
+  },
+  "homepage": "https://github.com/TrungHieu12/heroku#readme",
+  "description": ""
+}
+
+{
+  "lockfileVersion": 1
+}
